@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+  <script src="js/app.js" type="text/javascript"></script>
+
+  <title>Age calculator app</title>
+
+</head>
+
+<body>
+  <form action="javascript:getData()" method="post" id="form">
+    <div class="container">
+      <input required type="number" min="1" max="31" id="day" placeholder="DD">
+      <input required type="number" min="1" max="12" id="month" placeholder="MM">
+      <input required type="number" min="1910" id="year" placeholder="YYYY">
+
+      <div class="button">
+        <hr>
+        <button><img src="./assets/images/icon-arrow.svg" alt="Icono de flecha apuntando hacia abajo"></button>
+      </div>
+      <p id="future" style="color: rgb(236, 109, 109); font-size: 14px;"></p>
+      <div class="results">
+        <p class="text"><span id="yearNumber">- - </span>years</p>
+        <p class="text"><span id="monthNumber">- - </span>months</p>
+        <p class="text"><span id="dayNumber">- - </span>days</p>
+      </div>
+    </div>
+  </form>
+
+  <footer>
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/rugarcia25">Rubén García</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
